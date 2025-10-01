@@ -2,79 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our School - HBVAL CAP</title>
+  <title>Our School - HBV Anatolian High School</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
+  <!-- HEADER -->
   <header class="header">
     <div class="logo-area">
-      <img src="assets/images/logo.png" alt="School Logo" class="logo">
+      <img src="logo.png" alt="School Logo" class="logo">
       <div class="school-name">
-        <span class="sub">ISTANBUL / KUCUKCEKMECE</span>
         <h1>Hacı Bektaş Veli Anatolian High School</h1>
+        <div class="sub">ISTANBUL / KÜÇÜKÇEKMECE</div>
       </div>
     </div>
+
     <nav class="nav">
+      <a href="/">Home</a>
       <a href="/our-school">Our School</a>
-      <a href="/our-project">Our Project</a>
-      <a href="/our-activities">Our Activities</a>
+      <a href="/our-projects">Our Projects</a>
+      <a href="/activities">Activities</a>
     </nav>
+
+    <div class="right-area">
+      <img src="cap.png" alt="Cap Logo" class="cap-logo">
+      <img src="ataturk.png" alt="Ataturk" class="ataturk">
+      <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </div>
   </header>
 
-  <!-- Main Content -->
-  <main class="content">
-    <section>
-      <h2>Our School</h2>
-      <p><strong>Vision:</strong> To raise productive, high-quality, continuously innovative, research-oriented, and courageous generations in the fields of Science, Ethics, Democracy, and Economics.</p>
-      <p><strong>Mission:</strong> To instill in our students the love of the homeland and national consciousness, while raising self-confident students who are proficient in Turkish and foreign languages.</p>
+  <!-- CONTENT -->
+  <main class="page-content">
+    <section class="left">
+      <h2>Vision</h2>
+      <p>To raise productive, high-quality, continuously innovative, research-oriented, and courageous generations in the fields of Science, Ethics, Democracy, and Economics.</p>
 
-      <h3>Achievements:</h3>
+      <h2>Mission</h2>
+      <p>To instill in our students the love of the homeland and national consciousness, while raising self-confident students who are proficient in Turkish and foreign languages.</p>
+
+      <h2>Achievements</h2>
       <ul>
-        <li><strong>Dormitory Information:</strong> Available</li>
-        <li><strong>Hours:</strong> 08:55 - 15:45</li>
-        <li><strong>Heating:</strong> Natural Gas</li>
-        <li><strong>Internet:</strong> Fatih Project Fiber Internet</li>
-        <li><strong>Foreign Language:</strong> English</li>
-        <li><strong>Transport Information:</strong> Our school provides student transportation services. <br> <strong>Transport Responsible:</strong> 0533 702 87 67</li>
-        <li><strong>Sports Activities:</strong> —</li>
-        <li><strong>Scientific Activities:</strong> —</li>
-        <li><strong>Project Works:</strong> —</li>
-        <li><strong>Quota Information:</strong> 270</li>
+        <li><b>Dormitory Information:</b> Available</li>
+        <li><b>Hours:</b> 08:55 - 15:45</li>
+        <li><b>Heating:</b> Natural Gas</li>
+        <li><b>Internet:</b> Fatih Project Fiber Internet</li>
+        <li><b>Foreign Language:</b> English</li>
+        <li><b>Transport:</b> Yes</li>
+        <li><b>Sports Activities:</b> —</li>
       </ul>
     </section>
 
-    <section>
+    <section class="right">
       <h2>Contact</h2>
-      <p><strong>Phone:</strong> 0212 813 2100</p>
-      <p><strong>Fax:</strong> (212) 813 2100</p>
-      <p><strong>Address:</strong> Halkalı Merkez Mh. 1214 Sk. No:5 Küçükçekmece / ISTANBUL</p>
-    </section>
+      <p><b>Phone:</b> 0212 813 2100</p>
+      <p><b>Fax:</b> (212) 813 2100</p>
+      <p><b>Address:</b> Halkalı Merkez Mh. 1214 Sk. No:5 Küçükçekmece / ISTANBUL</p>
 
-    <section>
-      <h2>Current Status</h2>
+      <h2>Facilities</h2>
       <ul>
-        <li><strong>Teachers:</strong> 68</li>
-        <li><strong>Students:</strong> 996</li>
-        <li><strong>Classrooms:</strong> 39</li>
-        <li><strong>Workshops:</strong> 3</li>
-        <li><strong>Conference Hall:</strong> 1</li>
-        <li><strong>Meeting Rooms:</strong> 5</li>
-        <li><strong>Multi-purpose Halls:</strong> 11</li>
-        <li><strong>Sports Hall:</strong> 1</li>
-        <li><strong>Chemistry Lab:</strong> 1</li>
-        <li><strong>Physics Lab:</strong> 1</li>
-        <li><strong>Computer Lab:</strong> 1</li>
-        <li><strong>Music Classrooms:</strong> 2</li>
-        <li><strong>Art Classroom:</strong> 1</li>
-        <li><strong>Library:</strong> 1 (Books: 2654)</li>
-        <li><strong>Dining Halls:</strong> 2</li>
-        <li><strong>Infirmary:</strong> 1</li>
-        <li><strong>Parking Lot:</strong> 1</li>
-        <li><strong>Education Type:</strong> Full Day</li>
+        <li>Conference Hall: 1</li>
+        <li>Meeting Rooms: 5</li>
+        <li>Multi-purpose Halls: 11</li>
+        <li>Sports Hall: 1</li>
+        <li>Chemistry Lab: 1</li>
+        <li>Physics Lab: 1</li>
+        <li>Computer Lab: 1</li>
+        <li>Music Classrooms: 2</li>
       </ul>
     </section>
   </main>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
 </body>
 </html>

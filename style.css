@@ -1,3 +1,4 @@
+/* === VAR OLAN CSS'İN === */
 /* Genel */
 body {
   font-family: 'Inter', sans-serif;
@@ -104,12 +105,30 @@ body.dark {
   background: rgba(0,0,0,0.05);
 }
 
-/* Ana içerik */
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 100px);
-  font-size: 28px;
-  font-weight: 600;
+/* === YENİ EKLENEN KISIM === */
+/* Sayfa içeriği */
+.page-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background: var(--header-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.page-content h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid var(--header-border);
+  padding-bottom: 5px;
+}
+
+.page-content ul {
+  padding-left: 20px;
+}
+
+.page-content li {
+  margin-bottom: 6px;
 }
