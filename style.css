@@ -1,4 +1,4 @@
-/* === VAR OLAN CSS'İN === */
+/* === VAR OLAN CSS'İNİZ === */
 /* Genel */
 body {
   font-family: 'Inter', sans-serif;
@@ -105,7 +105,6 @@ body.dark {
   background: rgba(0,0,0,0.05);
 }
 
-/* === YENİ EKLENEN KISIM === */
 /* Sayfa içeriği */
 .page-content {
   display: grid;
@@ -123,7 +122,7 @@ body.dark {
   display: flex;
   justify-content: center; /* yatay ortalama */
   align-items: center;     /* dikey ortalama */
-  height: calc(100vh - 100px); /* header yüksekliğini düşerek kalan alan */
+  height: calc(100vh - 82px); /* header yüksekliğini düşerek kalan alan */
   text-align: center;
   font-size: 28px;
   font-weight: 600;
@@ -141,4 +140,54 @@ body.dark {
 
 .page-content li {
   margin-bottom: 6px;
+}
+
+/* =================================================================== */
+/* === MOBİL UYUMLULUK İÇİN EKLENEN YENİ KISIM (RESPONSIVE DESIGN) === */
+/* =================================================================== */
+
+/* Tablet ve Mobil Cihazlar (Ekran 992px'den küçük olduğunda) */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column; /* Öğeleri alt alta diz */
+    gap: 20px; /* Aralarına boşluk koy */
+    padding: 20px;
+  }
+
+  .school-name h1 {
+    font-size: 16px; /* Okul adını biraz küçült */
+    text-align: center; /* Mobil için ortala */
+  }
+
+  .logo-area {
+    flex-direction: column; /* Logoyu ve okul adını alt alta koy */
+  }
+
+  .nav {
+    flex-direction: column; /* Menü linklerini alt alta diz */
+    gap: 15px;
+  }
+  
+  .right-area {
+    order: -1; /* Sağdaki ikonları en üste al (isteğe bağlı, daha iyi görünüyor) */
+  }
+}
+
+/* Sadece Mobil Cihazlar (Ekran 600px'den küçük olduğunda) */
+@media (max-width: 600px) {
+  .header {
+    padding: 15px;
+  }
+
+  .logo {
+    height: 50px; /* Logoyu biraz daha küçült */
+  }
+
+  .school-name h1 {
+    font-size: 14px;
+  }
+
+  .content h2 {
+    font-size: 22px; /* 'COMING SOON' yazısını küçült */
+  }
 }
