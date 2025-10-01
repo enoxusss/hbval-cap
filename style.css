@@ -119,6 +119,16 @@ body.dark {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+.content {
+  display: flex;
+  justify-content: center; /* yatay ortalama */
+  align-items: center;     /* dikey ortalama */
+  height: calc(100vh - 100px); /* header yüksekliğini düşerek kalan alan */
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
 .page-content h2 {
   margin-top: 20px;
   border-bottom: 2px solid var(--header-border);
