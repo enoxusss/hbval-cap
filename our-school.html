@@ -15,8 +15,24 @@
   <!-- Font Awesome (ikonlar için) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Video responsive */
+    .intro-video {
+      width: 100%;
+      max-width: 900px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .intro-video iframe {
+      width: 100%;
+      height: 500px;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
   <!-- HEADER -->
@@ -47,6 +63,11 @@
       <img src="assets/images/ataturk.png" alt="Atatürk" class="ataturk">
     </div>
   </header>
+
+  <!-- Video -->
+  <div class="intro-video">
+    <iframe src="https://www.youtube.com/embed/IOM34Ku_hSI" title="School Introduction Video" frameborder="0" allowfullscreen></iframe>
+  </div>
 
   <!-- İçerik -->
   <main class="page-content">
